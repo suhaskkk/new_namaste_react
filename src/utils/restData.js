@@ -1,0 +1,42 @@
+export const resData = [
+    {
+      id: 1,
+      img: "https://media-cdn.tripadvisor.com/media/photo-s/19/fa/13/d3/paneer-biryani.jpg",
+      resName: "Meghna foods",
+      cuisine: "Biryani,North indian,asian",
+      stars: 4.4,
+      time: "32 minutes",
+    },
+    {
+      id: 2,
+      img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xs/D-K009.jpg?ver=35.42",
+      resName: "Kfc",
+      cuisine: "Chicken,North indian,asian",
+      stars: 4.1,
+      time: "35 minutes",
+    },
+    {
+      id: 3,
+      img: "https://media-cdn.tripadvisor.com/media/photo-s/16/8f/af/98/screenshot-20190221-213258.jpg",
+      resName: "Mcdonald",
+      cuisine: "Burger,North indian,asian",
+      stars: 4.3,
+      time: "40 minutes",
+    },
+    {
+      id: 4,
+      img: "https://i.insider.com/60a40faae25d05001880c4ff?width=1112&format=jpeg",
+      resName: "Burger King",
+      cuisine: "tikki,North indian,asian",
+      stars: 4.2,
+      time: "42 minutes",
+    },
+    {
+      id: 5,
+      img: "https://b.zmtcdn.com/data/pictures/7/19642507/2846c808d95faf8a5131a5d1a819b786.jpg",
+      resName: "vrushali",
+      cuisine: "chicken crispy,North indian,asian",
+      stars: 4.2,
+      time: "29 minutes",
+    },
+  ];
