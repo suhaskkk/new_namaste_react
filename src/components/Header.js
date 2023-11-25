@@ -1,6 +1,16 @@
+
+import { React, useState, useEffect } from "react";
 import {HEAD_URL} from '../utils/constants'
 
+
 const Header = () => {
+  const[btnName,setBtnName] = useState("login")
+  
+
+  const handleLogin = () =>{
+    setBtnName((prev)=>(prev==="login"?"logout":"login"))
+  }
+  
     return (
       <div className="header">
         <div className="logo-container">
@@ -15,8 +25,9 @@ const Header = () => {
           <ul>
             <li>Home</li>
             <li>About</li>
+            <li>Contact Us</li>
             <li>Cart</li>
-            <li>Cart</li>
+            <button style={{margin:"10px"}} onClick={handleLogin}>{btnName}</button>
           </ul>
         </div>
       </div>
