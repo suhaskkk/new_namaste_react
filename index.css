@@ -1,4 +1,4 @@
-     *{
+*{
    margin: 0;
    padding: 0;
 }
@@ -46,4 +46,23 @@
 .card_logo{
     width: 199px;
     height: 150px;
+}
+
+.shimmer_container{
+  display: flex;
+}
+
+.shimmer_card{
+    width:190px;
+    height:180px;
+    border:2px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: #D9DDDC;
+}
+.below_header{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    justify-content: space-evenly;
 }
