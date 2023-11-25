@@ -12,7 +12,7 @@ export const resData = [
     img: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xs/D-K009.jpg?ver=35.42",
     resName: "Kfc",
     cuisine: "Chicken,North indian,asian",
-    stars: 3.8,
+    stars: 4.1,
     time: "35 minutes",
   },
   {
@@ -20,7 +20,7 @@ export const resData = [
     img: "https://media-cdn.tripadvisor.com/media/photo-s/16/8f/af/98/screenshot-20190221-213258.jpg",
     resName: "Mcdonald",
     cuisine: "Burger,North indian,asian",
-    stars: 4.3,
+    stars: 3.3,
     time: "40 minutes",
   },
   {
@@ -36,7 +36,7 @@ export const resData = [
     img: "https://b.zmtcdn.com/data/pictures/7/19642507/2846c808d95faf8a5131a5d1a819b786.jpg",
     resName: "vrushali",
     cuisine: "chicken crispy,North indian,asian",
-    stars: 3.7,
+    stars: 3.2,
     time: "29 minutes",
   },
 ];
