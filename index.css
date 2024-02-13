@@ -19,12 +19,13 @@
     list-style-type: none;
     font-size: 20px;
     margin-top: 28px;
+    gap: 10px;
 }
 
-.nav_items > ul > li {
+/* .nav_items > ul > Link >li {
     margin: 10;
     padding: '10';
-}
+} */
 
 .card_size{
     width: 200px;

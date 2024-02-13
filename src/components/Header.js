@@ -1,6 +1,7 @@
 
-import { React, useState, useEffect } from "react";
+import { React, useState } from "react";
 import {HEAD_URL} from '../utils/constants'
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
@@ -23,10 +24,10 @@ const Header = () => {
         </div>
         <div className="nav_items">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact Us</li>
-            <li>Cart</li>
+            <Link to="/" ><li>Home</li></Link>
+            <li><Link to="/about">About</Link></li>
+            <Link to="/contact"><li>Contact us</li></Link>
+            <Link to="/cart"><li>Cart</li></Link>
             <button style={{margin:"10px"}} onClick={handleLogin}>{btnName}</button>
           </ul>
         </div>

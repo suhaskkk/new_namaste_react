@@ -1,32 +1,15 @@
 import FoodCard from "./FoodCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
+import useResList from "../utils/useResList";
 
 const Body = () => {
-  const [restoData, setRestoData] = useState([]);
+  
   const [searchData, setSearchData] = useState("");
-  const [filterSearchData, setFilterSearchData] = useState([]);
+  
+  const {restoData,filterSearchData}  = useResList();
 
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
-    try {
-      const data = await fetch(
-        "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"
-      );
-      const res = await data.json();
-      const restaurants =
-        res?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
-          ?.restaurants;
-      setRestoData(restaurants);
-      setFilterSearchData(restaurants)
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
+  console.log(restoData,"restoData")
 
   const handleFilterData = () => {
     const filterData = restoData.filter((el) => el?.info?.avgRating > 4.0);
@@ -60,7 +43,7 @@ const Body = () => {
       </div>
       <div className="food_card_container">
         {filterSearchData.map((restaurant) => (
-          <FoodCard key={restaurant.id} resCard={restaurant} />
+          <FoodCard key={restaurant.info.id} resCard={restaurant} />
         ))}
       </div>
     </div>
